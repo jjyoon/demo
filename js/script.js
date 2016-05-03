@@ -77,7 +77,7 @@ $(function () {
         setTimeout(function () {
             $(".work_overlay").addClass("show");
             $(bodyNum).fadeIn();
-            $(".work_overlay div.body:first-child").load("/project-pages/pulseband.php");
+            $(".work_overlay div.body:first-child").load("project-pages/pulseband.php");
             //$("section, body>header").addClass("blur");
             $("body").addClass("noscroll");
             $(".work_overlay").scrollTop(0);
