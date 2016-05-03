@@ -77,7 +77,9 @@ $(function () {
         setTimeout(function () {
             $(".work_overlay").addClass("show");
             $(bodyNum).fadeIn();
-            $(".work_overlay div.body:first-child").load("project-pages/pulseband.php");
+            $(".work_overlay div.body:first-child").load("project-pages/pulseband.php", function(){
+                $.getScript("js/script.min.js");
+            });
             //$("section, body>header").addClass("blur");
             $("body").addClass("noscroll");
             $(".work_overlay").scrollTop(0);
@@ -117,8 +119,7 @@ $(function () {
     });
 
     $(".exit_contain, .return").click(function () {
-        console.log('hi');
-        //closeProj();
+        closeProj();
     });
 
     //    if (window.history && window.history.pushState) {
